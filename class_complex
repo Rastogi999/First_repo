@@ -1,0 +1,27 @@
+#include<conio.h>
+#include<iostream>
+using namespace std;
+class Complex
+{
+    private:
+        int real;
+        int imag;
+    public:
+        void setData(int x,int y)
+        {real=x; imag=y;}
+        void getData()
+        {cout<<"Real part="<<real<<" Imaginary part="<<imag;}
+};
+int main()
+{
+    Complex c;
+    int r,i;
+    cout<<"Enter the real part::>";
+    cin>>r;
+    cout<<"Enter the imaginary part::>";
+    cin>>i;
+    c.setData(r,i);
+    c.getData();
+    getch();
+    return 1;
+}
